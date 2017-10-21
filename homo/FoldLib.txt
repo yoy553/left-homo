@@ -1,0 +1,30 @@
+(**
+<<
+   This is a library of Ltac that shows equivalence between two implementations: 
+
+>>
+
+ *)
+
+
+  Require Export List.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+                     
+  Unset Ltac Debug.
+
+    
+
+
+
