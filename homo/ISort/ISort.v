@@ -66,9 +66,9 @@
   Definition g (m : list nat) := m.
   
   Lemma Base_Omitted:
-    forall m2,
-      True -> True -> 
-	([]: list nat) ++ m2 = m2.
+    forall (m2: list nat),
+      True -> True ->
+      [] ++ m2 = m2.
   Proof. 
     trivial.
   Qed.     
@@ -112,7 +112,7 @@
       | x::xs => ins x (mergeS xs m2)
     end. 
 
-  Require Import homo.cata.
+
 
   
 
@@ -1028,9 +1028,10 @@
     apply ins_merge_assoc.
   Qed. 
 
-
+  Check SplitPred.
+  
   Lemma Recursive_Retention_L:
-    forall m1 m2,
+    forall (m1 m2: list nat),
       SplitPred m1 m2 ->
       forall x xs,
         m1 = x::xs ->
@@ -1049,18 +1050,18 @@
       isort_seed seed (m1 ++ m2) 
       = isort_seed (isort_seed seed m2) m1.
   Proof.
-    
-   Unset Ltac Debug.
+    Unset Ltac Debug.
     linU_inclusion_tac
         isort_seed
         isort_seed_equation
-	Base_Omitted
+        Base_Omitted
 	Recursive_Retension_R
         idtac
         SplitPred
         Recursive_Retention_L
     . 
   Qed.
+  
   Lemma Unit: forall seed,
       seed = merge_op [] seed.
   Proof. 
