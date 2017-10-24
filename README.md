@@ -1,4 +1,4 @@
-This directory contains Coq scripsts discussed in the paper. 
+This directory contains Coq scripsts (ver.8.6) discussed in the paper. 
 
 Title : Generalized Equivalence of Leftward and Homomorphic Functions
 Author: Yosuke Yamamot and Chris Dutchyn
