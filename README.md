@@ -7,7 +7,7 @@ Author: Yosuke Yamamot and Chris Dutchyn
 FoldLib.v  : Ltac scripts (section 2.2): linU_inclusion_tac (for Property 3),
 	     linU_slideout_tac (for Property 4),
              and linU_homomorphism_tac (for Meta-Proposition 1) 
-
+	     
 MyLib.v    : Library for the project
 
 cata.v     : List-catamorphisms  (section 2)
@@ -23,5 +23,4 @@ Replace.v  : replace function called by selectino sort defined in AnaSortEq.v
 
 ./Fact     : 
 Fact.v     : factorial function (section 3.2)
-
 
